@@ -26,7 +26,7 @@
 
     <nav class="main-nav" id="mainNav">
       <a href="#trust">왜 아파트게리롱</a>
-      <a href="#calculator">투자 계산기</a>
+      <a href="#reviews">실제 후기</a>
       <a href="#profile">프로필</a>
       <a href="#contact" class="nav-cta">상담신청</a>
     </nav>
@@ -60,7 +60,7 @@
         <a href="#contact" class="btn btn-primary">
           1:1 컨설팅 신청하기
         </a>
-        <a href="#calculator" class="btn btn-ghost">투자 시뮬레이션 해보기</a>
+        <a href="#reviews" class="btn btn-ghost">실제 후기 보기</a>
       </div>
 
       <ul class="hero-highlights reveal">
@@ -117,61 +117,55 @@
     </div>
   </section>
 
-  <!-- CALCULATOR -->
-  <section class="section" id="calculator">
+  <!-- REVIEWS -->
+  <section class="section reviews-section" id="reviews">
     <div class="container">
-      <p class="eyebrow reveal">INVESTMENT SIMULATOR</p>
-      <h2 class="section-title reveal">내 투자금, 어떤 결과로<br />돌아올까요?</h2>
-      <p class="section-desc reveal">투자 금액과 희망 지역, 평형을 입력하면 예상 수익률을 간단히 시뮬레이션해볼 수 있어요.</p>
+      <p class="eyebrow reveal">REAL REVIEW</p>
+      <h2 class="section-title reveal">숫자보다 확실한,<br />수강생들의 진짜 후기</h2>
+      <p class="section-desc reveal">실제 투자 코칭을 받은 분들이 남겨주신 후기입니다.</p>
 
-      <div class="calc-panel reveal">
-        <div class="calc-inputs">
-          <div class="calc-field">
-            <div class="calc-field-head">
-              <label for="calcAmount">투자 금액</label>
-              <span class="calc-field-value" id="calcAmountValue">3.0억원</span>
-            </div>
-            <input type="range" id="calcAmount" min="1" max="20" step="0.5" value="3" />
-          </div>
-
-          <div class="calc-field">
-            <label for="calcRegion">희망 지역</label>
-            <select id="calcRegion">
-              <option value="gangnam">서울 강남권</option>
-              <option value="seoul" selected>서울 기타</option>
-              <option value="gyeonggi">경기·인천</option>
-              <option value="metro">지방 광역시</option>
-              <option value="etc">지방 기타</option>
-            </select>
-          </div>
-
-          <div class="calc-field">
-            <label for="calcSize">평형대</label>
-            <select id="calcSize">
-              <option value="small">20평대</option>
-              <option value="mid" selected>30평대</option>
-              <option value="large">40평대 이상</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="calc-results">
-          <div class="calc-result-tile">
-            <span class="calc-result-figure" id="resYield">3.8<small>%</small></span>
-            <span class="calc-result-label">예상 연 수익률</span>
-          </div>
-          <div class="calc-result-tile">
-            <span class="calc-result-figure" id="resRent">95<small>만원</small></span>
-            <span class="calc-result-label">예상 월세 수익</span>
-          </div>
-          <div class="calc-result-tile calc-result-tile-accent">
-            <span class="calc-result-figure" id="resGain">6,000<small>만원</small></span>
-            <span class="calc-result-label">5년 후 예상 시세차익</span>
-          </div>
-        </div>
+      <div class="review-score reveal">
+        <span class="review-score-figure">4.97<span class="review-score-max"> / 5.0</span></span>
+        <span class="review-score-stars">★★★★★</span>
+        <span class="review-score-label">실제 투자코칭 후기 평균 만족도 기준</span>
       </div>
 
-      <p class="calc-disclaimer reveal">* 위 결과는 이해를 돕기 위해 임의로 설정한 가정치 기반의 단순 예시이며, 실제 수익률·시세와 다를 수 있습니다. 투자 결정 전에는 반드시 최신 시세 확인과 전문가 상담을 거치시길 권장합니다.</p>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <span class="review-card-stars">★★★★★</span>
+          <p class="review-card-quote">"첫 투자라 고민이 많았는데, 튜터님께서 제 상황에서 가장 좋은 선택이 무엇인지 명확하게 짚어주셨습니다. '이렇게 진행하는 게 좋겠다'라는 확신을 주셔서 마음이 한결 편해졌습니다."</p>
+          <p class="review-card-summary">막연했던 첫 투자의 방향을 완벽히 잡았습니다</p>
+          <span class="review-card-meta">30대 직장인 · 1호기 고민 · 승*형님</span>
+        </div>
+
+        <div class="review-card reveal">
+          <span class="review-card-stars">★★★★★</span>
+          <p class="review-card-quote">"남편과 투자 방향으로 의견 차이가 있어 답답했는데, 코칭 후 우리가 무엇을 선택하고 포기해야 할지 명확해졌습니다. 지금 당장 집중해야 할 목표가 생겨서 너무 감사합니다."</p>
+          <p class="review-card-summary">부부의 투자 방향성에 확실한 기준이 생겼습니다</p>
+          <span class="review-card-meta">30대 · 내집마련/실거주 · 빛*님</span>
+        </div>
+
+        <div class="review-card reveal">
+          <span class="review-card-stars">★★★★★</span>
+          <p class="review-card-quote">"3년 동안 망설이다 처음 받았는데 왜 이제 받았나 싶을 정도로 좋았습니다. 제 종잣돈 상황에 맞춰 어떤 투자를 해야 하는지 현실적인 로드맵을 그려주셔서 가슴이 뛰네요."</p>
+          <p class="review-card-summary">투자의 조급함을 덜고 올바른 전략을 얻었습니다</p>
+          <span class="review-card-meta">40대 · 2호기 고민 · ㅍ*님</span>
+        </div>
+
+        <div class="review-card reveal">
+          <span class="review-card-stars">★★★★★</span>
+          <p class="review-card-quote">"부동산의 'ㅂ'자도 모르는 초보라 걱정하며 갔는데, 아주 기초적인 부분부터 상세히 알려주셨습니다. 튜터님의 조언대로 바로 실행할 자신감이 생겼습니다."</p>
+          <p class="review-card-summary">초보 투자자가 나아갈 구체적인 가이드라인을 얻었습니다</p>
+          <span class="review-card-meta">20대 · 부린이 · 2025년 수강생</span>
+        </div>
+
+        <div class="review-card reveal">
+          <span class="review-card-stars">★★★★★</span>
+          <p class="review-card-quote">"투자에 대한 조급함 때문에 무리할 뻔했는데, 튜터님 덕분에 시장을 객관적으로 보고 제 속도에 맞춰 나아갈 방법을 찾았습니다. 정말 뼈와 살이 되는 시간이었습니다."</p>
+          <p class="review-card-summary">흔들리는 투자의 중심을 잡아준 값진 시간이었습니다</p>
+          <span class="review-card-meta">30대 · 1호기 목표 · 볼*님</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -239,6 +233,26 @@
 
       <div class="process-note reveal">
         <span>컨설팅 50분 기준 · 강남역 오프라인 / Zoom 온라인 선택 가능</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <p class="eyebrow reveal">ON-SITE</p>
+      <h2 class="section-title reveal">강의실을 가득 채운,<br />진짜 관심과 열기</h2>
+      <p class="section-desc reveal">매 기수 만석으로 진행되는 아파트게리롱 부동산 세미나 현장입니다.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-frame reveal">
+          <img src="assets/img/seminar-hall.jpg" alt="2026 부동산세미나 강의실 만석 현장" loading="lazy" />
+          <span class="gallery-frame-caption">2026 부동산세미나 · 강의실 만석 현장</span>
+        </div>
+        <div class="gallery-frame reveal">
+          <img src="assets/img/seminar-group.jpg" alt="세미나 수강생들과 함께한 단체 사진" loading="lazy" />
+          <span class="gallery-frame-caption">수강생들과 함께</span>
+        </div>
       </div>
     </div>
   </section>
@@ -351,14 +365,6 @@
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer"><p>아닙니다. 본 컨설팅은 투자 정보를 제공하거나 성과를 보장하는 내용을 포함하지 않으며, 데이터에 기반한 합리적인 판단을 돕는 것을 목적으로 합니다.</p></div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false">
-            <span>투자 시뮬레이터의 수익률은 정확한가요?</span>
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><p>아니요, 이해를 돕기 위해 임의로 설정한 가정치 기반의 단순 예시입니다. 실제 시세·수익률과 다를 수 있으며, 정확한 분석은 1:1 컨설팅을 통해 확인하실 수 있습니다.</p></div>
         </div>
 
         <div class="faq-item reveal">
