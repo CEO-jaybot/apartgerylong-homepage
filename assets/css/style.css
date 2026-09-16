@@ -456,7 +456,7 @@ h1,h2,h3,p{ margin:0; word-break:keep-all; overflow-wrap:break-word; }
    ========================================================================== */
 .process-steps{
   margin-top:64px;
-  display:grid; grid-template-columns:1fr 64px 1fr 64px 1fr;
+  display:grid; grid-template-columns:1fr 48px 1fr 48px 1fr 48px 1fr;
   align-items:start;
 }
 .process-step{ text-align:center; padding:0 8px; }
@@ -740,6 +740,8 @@ h1,h2,h3,p{ margin:0; word-break:keep-all; overflow-wrap:break-word; }
   .insight-grid{ grid-template-columns:1fr 1fr; }
   .insight-card:nth-child(3){ grid-column:1 / -1; }
   .trust-grid{ grid-template-columns:1fr; }
+  .process-steps{ grid-template-columns:1fr 1fr; gap:48px 24px; }
+  .process-step-connector{ display:none; }
   .gallery-grid{ grid-template-columns:1fr; }
   .video-grid{ grid-template-columns:1fr 1fr; }
 }
