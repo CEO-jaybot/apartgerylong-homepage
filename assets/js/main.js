@@ -39,6 +39,23 @@
   );
   revealEls.forEach((el) => io.observe(el));
 
+  // Review marquee — duplicate the cards so the track can loop seamlessly
+  const reviewTrack = document.getElementById('reviewTrack');
+  if (reviewTrack) {
+    [...reviewTrack.children].forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      reviewTrack.appendChild(clone);
+    });
+
+    const setMarqueeSpeed = () => {
+      const loopWidth = reviewTrack.scrollWidth / 2;
+      reviewTrack.style.setProperty('--marquee-duration', `${loopWidth / 55}s`);
+    };
+    setMarqueeSpeed();
+    window.addEventListener('resize', setMarqueeSpeed);
+  }
+
   // FAQ accordion
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach((item) => {
