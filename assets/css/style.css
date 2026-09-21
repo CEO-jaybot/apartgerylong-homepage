@@ -463,7 +463,7 @@ h1,h2,h3,p{ margin:0; word-break:keep-all; overflow-wrap:break-word; }
 /* ==========================================================================
    Contact form
    ========================================================================== */
-.kakao-proof{ margin-bottom:72px; }
+.kakao-proof{ margin-top:88px; }
 .kakao-proof-tag{
   display:inline-block;
   font-size:13px; font-weight:700; letter-spacing:.22em;
@@ -880,7 +880,7 @@ h1,h2,h3,p{ margin:0; word-break:keep-all; overflow-wrap:break-word; }
   .process-step-connector{ display:none; }
   .gallery-grid{ grid-template-columns:1fr; }
   .review-card{ flex-basis:min(300px,80vw); margin-right:16px; }
-  .kakao-proof{ margin-bottom:56px; }
+  .kakao-proof{ margin-top:64px; }
   .kakao-proof-grid{ columns:1; }
   .review-score{ flex-direction:column; align-items:flex-start; gap:8px; }
   .video-grid{ grid-template-columns:1fr; }
