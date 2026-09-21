@@ -241,6 +241,63 @@ h1,h2,h3,p{ margin:0; word-break:keep-all; overflow-wrap:break-word; }
 }
 
 /* ==========================================================================
+   Results (before / after)
+   ========================================================================== */
+.results-stat{ color:var(--gold-600); font-weight:700; }
+.results-sort{ margin-top:36px; display:flex; gap:8px; }
+.results-sort-btn{
+  font-family:inherit; font-size:13px; font-weight:600; cursor:pointer;
+  border:1px solid var(--line); background:#fff; color:var(--navy-900);
+  border-radius:999px; padding:8px 16px;
+  transition:background .25s, color .25s, border-color .25s;
+}
+.results-sort-btn.is-active{ background:var(--navy-900); color:var(--gold-300); border-color:var(--navy-900); }
+.results-grid{
+  margin-top:24px;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:18px;
+}
+.result-card{
+  background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px;
+  transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.result-card:hover{ transform:translateY(-4px); box-shadow:0 24px 50px -32px rgba(10,20,36,.35); }
+.result-card-head{ display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.result-card-tag{
+  font-size:11px; font-weight:600; color:#9a6c22;
+  background:rgba(223,169,74,.14); padding:4px 10px; border-radius:999px;
+}
+.result-card-rate{
+  font-size:12px; font-weight:700; color:var(--gold-300);
+  background:var(--navy-900); padding:4px 10px; border-radius:999px;
+}
+.result-card-name{ margin-top:12px; font-size:1.05rem; font-weight:700; color:var(--navy-900); }
+.result-card-compare{
+  margin-top:14px;
+  display:grid; grid-template-columns:.8fr auto 1.2fr; align-items:center; gap:6px;
+}
+.result-box{ border-radius:12px; padding:10px 6px; text-align:center; }
+.result-box-label{ font-size:10px; letter-spacing:.08em; font-weight:600; }
+.result-box-before{ background:var(--ivory); color:var(--paper-dim); }
+.result-box-before .result-box-price{ font-size:.95rem; font-weight:600; }
+.result-box-before .result-box-date{ font-size:11px; color:#b0aca2; }
+.result-box-after{ background:var(--navy-900); }
+.result-box-after .result-box-label{ color:var(--ivory-dim); }
+.result-box-after .result-box-price{ font-size:1.65rem; font-weight:800; color:var(--gold-300); line-height:1.2; }
+.result-box-after .result-box-price small{ font-size:.95rem; }
+.result-arrow{ color:var(--gold-600); font-size:16px; }
+.result-bar{
+  margin-top:16px; height:8px; border-radius:4px; background:var(--gold-500);
+  position:relative; overflow:hidden;
+}
+.result-bar-base{ position:absolute; inset:0 auto 0 0; background:var(--line); }
+.result-card-foot{
+  margin-top:8px; display:flex; justify-content:space-between; font-size:12px;
+  color:var(--paper-dim);
+}
+.result-card-gain{ color:var(--gold-600); font-weight:700; }
+.results-note{ margin-top:24px; font-size:12px; color:var(--paper-dim); }
+
+/* ==========================================================================
    Trust section
    ========================================================================== */
 .trust-grid{
