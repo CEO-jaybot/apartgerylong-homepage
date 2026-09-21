@@ -442,26 +442,31 @@
           <li class="reveal">실행 가능한 액션 플랜</li>
         </ul>
 
-        <div class="contact-meta reveal">
-          <div class="contact-meta-item">
-            <span class="contact-meta-label">상담 방식</span>
-            <span class="contact-meta-value">강남역 오프라인 / Zoom 온라인</span>
-          </div>
-          <div class="contact-meta-item">
-            <span class="contact-meta-label">상담 비용</span>
-            <span class="contact-meta-value"><del>50만원</del> 39만원 <small>(기간 한정 할인)</small></span>
-          </div>
-        </div>
-
         <p class="contact-disclaimer reveal">* 본 컨설팅은 투자 정보를 제공하거나 성과를 보장하는 내용을 포함하지 않습니다.</p>
       </div>
 
-      <div class="contact-form-wrap reveal">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdGdNgfdNijX5e8cTzCC2ZvLj7m9w_qPWGNnrqhK9iNEnsMXg/viewform?embedded=true"
-          title="아파트게리롱 상담 신청 폼"
-          loading="lazy">로드 중…</iframe>
-        <a href="https://bit.ly/48OO4vg" target="_blank" rel="noopener" class="contact-form-fallback">새 창에서 폼 열기 ↗</a>
+      <div class="apply-card reveal" id="apply-card">
+        <div class="apply-card-top">
+          <span class="apply-badge">기간 한정 할인</span>
+          <span class="apply-mode">50분 · 강남역 오프라인 / Zoom 온라인</span>
+        </div>
+
+        <div class="apply-price">
+          <del>정가 50만원</del>
+          <p class="apply-price-now">39<small>만원</small> <em>22% 할인</em></p>
+        </div>
+
+        <a href="https://bit.ly/48OO4vg" target="_blank" rel="noopener" class="btn-apply">
+          상담 신청하기
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="apply-note">신청서 작성 약 3분 · 신청만으로는 비용이 들지 않아요</p>
+
+        <div class="apply-proof">
+          <div><strong>4.97</strong><span>코칭 만족도</span></div>
+          <div><strong>1,000+</strong><span>누적 상담</span></div>
+          <div><strong>20,000+</strong><span>누적 수강생</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -532,6 +537,19 @@
     </div>
   </section>
 
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="final-cta">
+    <div class="container cta-inner">
+      <p class="eyebrow eyebrow-light reveal">LAST STEP</p>
+      <h2 class="cta-title reveal">수억 원의 결정,<br />이제 혼자 고민하지 마세요</h2>
+      <p class="cta-desc reveal">1,000번의 상담으로 검증된 기준을 내 상황에 맞춰 드립니다.</p>
+      <a href="https://bit.ly/48OO4vg" target="_blank" rel="noopener" class="btn-apply reveal">
+        39만원으로 상담 신청하기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -558,6 +576,10 @@
     </div>
   </div>
 </footer>
+
+<div class="sticky-apply" id="sticky-apply" aria-hidden="true">
+  <a href="https://bit.ly/48OO4vg" target="_blank" rel="noopener" class="btn-apply" tabindex="-1">39만원 상담 신청하기</a>
+</div>
 
 <script src="assets/js/main.js"></script>
 </body>

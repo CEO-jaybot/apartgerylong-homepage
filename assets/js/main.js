@@ -120,6 +120,33 @@
     window.addEventListener('resize', setMarqueeSpeed);
   }
 
+  // Mobile sticky apply bar — shown past the hero, hidden while a full apply CTA is on screen
+  const stickyApply = document.getElementById('sticky-apply');
+  if (stickyApply) {
+    const stickyLink = stickyApply.querySelector('a');
+    const ctasInView = new Set();
+    let pastHero = false;
+    const updateSticky = () => {
+      const show = pastHero && ctasInView.size === 0;
+      stickyApply.classList.toggle('is-shown', show);
+      stickyApply.setAttribute('aria-hidden', String(!show));
+      stickyLink.tabIndex = show ? 0 : -1;
+    };
+    // isIntersecting stays true for a sliver of overlap, so compare the ratio itself
+    const ctaObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e) => (e.intersectionRatio >= 0.15 ? ctasInView.add(e.target) : ctasInView.delete(e.target)));
+      updateSticky();
+    }, { threshold: 0.15 });
+    ['apply-card', 'final-cta'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) ctaObserver.observe(el);
+    });
+    window.addEventListener('scroll', () => {
+      pastHero = window.scrollY > window.innerHeight * 0.8;
+      updateSticky();
+    }, { passive: true });
+  }
+
   // FAQ accordion
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach((item) => {
