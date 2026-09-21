@@ -103,22 +103,21 @@
     render(true);
   }
 
-  // Review marquee — duplicate the cards so the track can loop seamlessly
-  const reviewTrack = document.getElementById('reviewTrack');
-  if (reviewTrack) {
-    [...reviewTrack.children].forEach((card) => {
-      const clone = card.cloneNode(true);
+  // Marquees — duplicate each track's items so it can loop seamlessly; data-speed is px/s
+  document.querySelectorAll('.review-track').forEach((track) => {
+    [...track.children].forEach((item) => {
+      const clone = item.cloneNode(true);
       clone.setAttribute('aria-hidden', 'true');
-      reviewTrack.appendChild(clone);
+      track.appendChild(clone);
     });
 
+    const speed = Number(track.dataset.speed) || 55;
     const setMarqueeSpeed = () => {
-      const loopWidth = reviewTrack.scrollWidth / 2;
-      reviewTrack.style.setProperty('--marquee-duration', `${loopWidth / 55}s`);
+      track.style.setProperty('--marquee-duration', `${track.scrollWidth / 2 / speed}s`);
     };
     setMarqueeSpeed();
     window.addEventListener('resize', setMarqueeSpeed);
-  }
+  });
 
   // Mobile sticky apply bar — shown past the hero, hidden while a full apply CTA is on screen
   const stickyApply = document.getElementById('sticky-apply');
