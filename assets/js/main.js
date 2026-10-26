@@ -41,18 +41,18 @@
 
   // Before / after results — prices in 억, after = current asking price
   const results = [
-    { name: '마포프레스티지자이', tag: '40중반 · 4인가족', bought: '24.11', before: 17.7, after: 24 },
-    { name: 'e편한세상신촌', tag: '30초반 · 신혼', bought: '24.07', before: 13.5, after: 19 },
-    { name: '성내삼성1차', tag: '30후반 · 신혼', bought: '24.11', before: 9.28, after: 13 },
-    { name: '파크리오', tag: '30중반 · 3인가족', bought: '25.06', before: 26.4, after: 28 },
-    { name: '마포더클래시', tag: '40후반 · 3인가족', bought: '25.02', before: 17.5, after: 24 },
-    { name: '공덕래미안4차', tag: '30초반 · 신혼', bought: '25.01', before: 13.3, after: 19 },
-    { name: '센트라스', tag: '40중반 · 4인가족', bought: '25.05', before: 15.6, after: 20 },
-    { name: '신길센트럴자이', tag: '40초반 · 싱글', bought: '25.01', before: 12.8, after: 17 },
-    { name: '잠실엘스', tag: '40중반 · 3인가족', bought: '25.05', before: 25.5, after: 30 },
-    { name: '목동센트럴아이파크위브', tag: '30후반 · 2인가족', bought: '24.06', before: 6.92, after: 9 },
-    { name: '래미안로이파크', tag: '40중반 · 4인가족', bought: '25.02', before: 16.85, after: 21 },
-    { name: '송파롯데캐슬시그니처 59', tag: '40중반 · 3인가족', bought: '25.10', before: 17.95, after: 22 },
+    { name: '약수하이츠', tag: '24평', bought: '25.08', before: 12, after: 16.4 },
+    { name: '노량진우성', tag: '33평', bought: '25.09', before: 12.6, after: 16.2 },
+    { name: '독립문극동', tag: '32평', bought: '25.09', before: 11.9, after: 15.5 },
+    { name: '마포프레스티지자이', tag: '34평', bought: '25.06', before: 18.5, after: 23 },
+    { name: '신길센트럴자이', tag: '34평', bought: '25.07', before: 14.9, after: 19.5 },
+    { name: '신도림동아3차', tag: '24평', bought: '25.09', before: 11.6, after: 15.5 },
+    { name: '현대3차', tag: '33평', bought: '26.01', before: 10.9, after: 14.5 },
+    { name: '관악드림타운', tag: '24평', bought: '26.02', before: 9.2, after: 12 },
+    { name: '보람마을아주', tag: '24평', bought: '25.11', before: 4.9, after: 6.8 },
+    { name: '길음6단지래미안', tag: '32평', bought: '25.12', before: 12.5, after: 15 },
+    { name: '목동신시가지7단지', tag: '22평', bought: '26.04', before: 20.8, after: 26 },
+    { name: '고덕래미안힐스테이트', tag: '34평', bought: '25.08', before: 18.7, after: 21.5 },
   ];
   const resultsGrid = document.getElementById('resultsGrid');
   if (resultsGrid) {
